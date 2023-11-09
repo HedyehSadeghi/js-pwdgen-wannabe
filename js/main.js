@@ -39,7 +39,7 @@ document.getElementById("userPasswordCreated").innerHTML= passwordCreated;
 
 
 function createPassword(name, surname,favoriteColor) {
-    name= prompt("What's your name?","Giulia");         //let var= ... perché sia variabile locale?
+    name= prompt("What's your name?","Giulia");      //così non sono variabili ma parametri?
     surname = prompt("What's your surname?","Rossi");
     favoriteColor= prompt("What's your favorite color?","Viola")
     passwordCreated = name +  surname +favoriteColor + randomNumber ;
