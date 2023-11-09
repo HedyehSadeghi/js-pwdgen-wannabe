@@ -1,7 +1,13 @@
-let name = prompt("Qual è il tuo nome? ");
-let surname = prompt("Qual è il tuo cognome?");
-let favoriteColor= prompt("Qual è il tuo colore preferito?")
+let name = prompt("What's your name?");
+let surname = prompt("What's your surname?");
+let favoriteColor= prompt("What's your favorite color?")
+let userNumber1 = prompt ("Choose a number: ");
+let userNumber2 = prompt ("Choose a second number: ");
 
-let passwordCreated= "{" +name + "}" + "{" + surname + "}" + "{" +favoriteColor+ "}" +21;
+let fourthPasswordElement= parseInt(userNumber1)/parseInt(userNumber2);
+
+let passwordCreated= "{" +name + "}" + "{" + surname + "}" + "{" +favoriteColor+ "}" +fourthPasswordElement;
+
+console.log(passwordCreated);
 
 document.getElementById("userPasswordCreated").innerHTML= passwordCreated;
