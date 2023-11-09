@@ -15,6 +15,7 @@ document.getElementById("userPasswordCreated").innerHTML= passwordCreated;
 */
 
 
+/*
 let name = prompt("What's your name?");
 let surname = prompt("What's your surname?");
 let favoriteColor= prompt("What's your favorite color?")
@@ -33,3 +34,22 @@ let passwordCreated= "{" +name + "}" + "{" + surname + "}" + "{" +favoriteColor+
 console.log(passwordCreated);
 
 document.getElementById("userPasswordCreated").innerHTML= passwordCreated;
+*/
+
+
+
+function createPassword(name, surname,favoriteColor) {
+    name= prompt("What's your name?","Giulia");         //let var= ... perché sia variabile locale?
+    surname = prompt("What's your surname?","Rossi");
+    favoriteColor= prompt("What's your favorite color?","Viola")
+    passwordCreated = name +  surname +favoriteColor + randomNumber ;
+    document.write("Your password is: ");
+    document.write(passwordCreated);
+} 
+
+
+
+randomNumber= Math.floor(Math.random()*1000)
+
+
+
