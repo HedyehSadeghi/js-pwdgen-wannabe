@@ -61,16 +61,20 @@
             <div class="row py-4">
                 <div class="col-lg-6 col-md-6 col-12">
                     <h6 class="text-danger pb-4">GENERATORE DI PASSWORD</h6>
-                    <h1 class="mb-5">Ti serve una password sicura?</h1>
+                    <h1 class=" mt-3 mb-5">Ti serve una password sicura?</h1>
                     <h5 class="pb-5">Con noi puoi farlo</h5>
-                    <button type="button" class="btn btn-danger" onclick="createPassword()">Prova subito gratis</button>
-                    <button type="button" class="btn btn-info">Abbonati</button>
+                    <button type="button" class="btn btn-danger mt-5" onclick="askDataCreatePassword()">Prova ora gratis</button>
+                    <button type="button" class="btn btn-info mt-5">Abbonati</button>
+                    <!--<p>La password generata è: <span id="userPasswordCreated"></span></p> -->
+
+                    <div>
+                      <p class="p-2 mt-5 border">La tua password verrà generata qui: <span id="password"></span></p>
+                    </div>
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-12">
                     <img src="./img/imgmain.jpg" alt="immagine" style="height: 40%;" class="rounded shadow-lg">
                 </div>
-
             </div>
 
 
@@ -80,11 +84,7 @@
     </main>
 
 
-    <footer>
-
-    </footer>
-    
-
+  
 
 
   

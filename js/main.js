@@ -29,7 +29,7 @@ randomNumber= Math.floor(Math.random()*1000)
 
 console.log(randomNumber); 
 
-let passwordCreated= "{" +name + "}" + "{" + surname + "}" + "{" +favoriteColor+ "}"+ randomNumber ;
+let passwordCreated= name+ surname +favoriteColor+ randomNumber ;
 
 console.log(passwordCreated);
 
@@ -37,19 +37,26 @@ document.getElementById("userPasswordCreated").innerHTML= passwordCreated;
 */
 
 
+randomNumber= Math.floor(Math.random()*1000)
 
-function createPassword(name, surname,favoriteColor) {
+/*
+function createPassword(name, surname, favoriteColor) {
     name= prompt("What's your name?","Giulia");      //così non sono variabili ma parametri?
     surname = prompt("What's your surname?","Rossi");
     favoriteColor= prompt("What's your favorite color?","Viola")
-    passwordCreated = name +  surname +favoriteColor + randomNumber ;
-    document.write("Your password is: ");
-    document.write(passwordCreated);
+    let passwordCreated = name +  surname +favoriteColor + randomNumber ;
+    document.writeln("your password is : " + passwordCreated);
 } 
+*/
 
 
-
-randomNumber= Math.floor(Math.random()*1000)
+function askDataCreatePassword(name,surname,favoriteColor){
+    name=prompt("What's your name?","Giulia");
+    surname = prompt("What's your surname?","Rossi");
+    favoriteColor= prompt("What's your favorite color?","Viola");
+    let passwordCreated= name+surname+favoriteColor+randomNumber;
+    return document.getElementById("password").innerHTML= passwordCreated;
+}
 
 
 
